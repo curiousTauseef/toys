@@ -6,16 +6,15 @@ import java.util.PriorityQueue;
 public class LRUCache {
 	
 	private PriorityQueue<CacheElement> storage;
-	private final static int CAPACITY = 10;
-	private int capacity = CAPACITY;
+	private int capacity = 10;
 	
 	public LRUCache() {
-		storage = new PriorityQueue<CacheElement>(CAPACITY, new LRUComparator());
+		storage = new PriorityQueue<CacheElement>(capacity, new LRUComparator());
 	}
 	
-	public LRUCache(int initialCapacity) {
-		storage = new PriorityQueue<CacheElement>(initialCapacity, new LRUComparator());
-		capacity = initialCapacity;
+	public LRUCache(int capacity) {
+		storage = new PriorityQueue<CacheElement>(capacity, new LRUComparator());
+		this.capacity = capacity;
 	}
 
 	public boolean hasCache(String key) {
