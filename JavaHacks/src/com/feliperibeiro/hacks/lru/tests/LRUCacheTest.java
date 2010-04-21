@@ -7,7 +7,7 @@ import junit.framework.TestCase;
 public class LRUCacheTest extends TestCase {
 
 	public void testCache() {
-		LRUCache cache = new LRUCache(2);
+		LRUCache<String> cache = new LRUCache<String>(2);
 		assertFalse(cache.hasCache("key1"));
 		cache.set("key1", "value1");
 		assertTrue(cache.hasCache("key1"));

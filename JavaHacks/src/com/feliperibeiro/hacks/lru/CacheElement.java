@@ -2,22 +2,22 @@ package com.feliperibeiro.hacks.lru;
 
 import java.util.Calendar;
 
-class CacheElement {
+class CacheElement<T> {
 	private long lastHit;
 	private String key;
-	private Object value;
+	private T value;
 	
-	public CacheElement(String key, Object value, long lastHit) {
+	public CacheElement(String key, T value, long lastHit) {
 		this.key = key;
 		this.value = value;
 		this.lastHit = lastHit;
 	}
 	
-	protected void setValue(Object value) {
+	protected void setValue(T value) {
 		this.value = value;
 	}
 	
-	protected Object getValue() {
+	protected T getValue() {
 		return value;
 	}
 	
