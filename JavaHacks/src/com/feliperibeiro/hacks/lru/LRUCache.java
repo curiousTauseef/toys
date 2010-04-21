@@ -25,14 +25,21 @@ public class LRUCache {
 	public Object get(String key) {
 		for (CacheElement e : storage) {
 			if(e.getKey().equals(key)) {
-				storage.remove(e);
-				this.set(e.getKey(), e.getValue());
+				hit(e);
 				return e.getValue();
 			}
 		}
 		return null;
 	}
 	
+	/**
+	 * Necessary to make PriorityQueue refresh the order
+	 */
+	private void hit(CacheElement e) {
+		storage.remove(e);
+		this.set(e.getKey(), e.getValue());
+	}
+
 	public void set(String key, Object value) {
 		CacheElement e = new CacheElement(key, value, Calendar.getInstance().getTimeInMillis());
 		storage.add(e);
