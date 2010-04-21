@@ -1,1 +1,7 @@
 Hacks writen in Java
+
+LRUCache: http://github.com/felipernb/toys/tree/master/JavaHacks/src/com/feliperibeiro/hacks/lru/
+
+MergeSortedArray: http://github.com/felipernb/toys/tree/master/JavaHacks/src/com/feliperibeiro/hacks/merge
+
+OddIntegerOut: http://github.com/felipernb/toys/tree/master/JavaHacks/src/com/feliperibeiro/hacks/oddintegerout
