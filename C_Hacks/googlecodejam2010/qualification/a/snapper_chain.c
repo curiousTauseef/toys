@@ -15,9 +15,7 @@ int main(void) {
 	int t; //Number of tests
 	unsigned int n; //number of snappers
 	unsigned int k; //number of snaps
-	int i,j;
-
-	unsigned int on;
+	int i;
 
 	scanf("%d",&t);
 	for(i=0; i<t; i++) {
