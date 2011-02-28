@@ -1,8 +1,22 @@
 <?php
-
 /*
  * Implementing integer division without division operator
  * @author Felipe Ribeiro <felipernb@gmail.com>
+*/
+
+
+/**
+ * Division in O(n) (n = dividend)
+ *
+ */
+function linearDivision($dividend, $divisor) {
+	for($quocient = 0; $quocient*$divisor <= $dividend - $divisor; $quocient++);
+	return $quocient;
+}
+
+
+/**
+ * Division in O(lg n) (n = dividend) using recursion
  */
 function division($dividend, $divisor) {
 
