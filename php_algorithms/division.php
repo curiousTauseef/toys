@@ -28,12 +28,9 @@ function division($dividend, $divisor) {
 
 	$quotient = 1;
 
-	while ($divisor*$quotient <= $dividend) {
+	while ($divisor*$quotient <= $dividend >> 1) {
 		$quotient = $quotient << 1;
 	}
-
-	/* quotient * divisor > $dividend */
-	$quotient = $quotient >> 1;
 
 	/* Call division recursively for the difference to get the
 	 exact quotient */
