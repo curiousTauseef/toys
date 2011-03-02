@@ -31,7 +31,7 @@ class Node {
 }
 
 /**
- * Using BFS traverse the tree printing every level with an end-of-line after each one
+ * Use BFS to traverse the tree printing every level with an end-of-line after each one
  */
 function printByLevel(Node $n) {
 	$queue = array();
