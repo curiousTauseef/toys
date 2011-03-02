@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Prints a BST by levels.
+ * Prints a Binary Tree level by level (BFS).
  *
  * E.g.: for a tree like:
  *       5
