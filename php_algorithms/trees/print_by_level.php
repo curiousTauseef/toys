@@ -1,7 +1,9 @@
 <?php
 
 /**
- * Prints a BST by level, for a tree like:
+ * Prints a BST by levels.
+ *
+ * E.g.: for a tree like:
  *       5
  *    3      8
  * 2    4  7   9
@@ -22,7 +24,7 @@ class Node {
 	public $value;
 	public $left;
 	public $right;
-	public $currentLevel;
+	public $level;
 	public function __construct($n) {
 		$this->value = $n;
 	}
