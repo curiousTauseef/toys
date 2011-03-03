@@ -7,9 +7,9 @@
  */
 function multiply_matrix($a, $b) {
     $linesA = count($a);
-    $columnsA = count($a[0]);
+    $colsA = count($a[0]);
     $linesB = count($b);
-    $columnsB = count($b[0]);
+    $colsB = count($b[0]);
     $c = array();
     for($i = 0; $i < $linesA; $i++) {
         for ($j = 0; $j < $colsB; $j++) {
